@@ -1,0 +1,59 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f1ddd0693fa, pid=4605, tid=139765962766080
+#
+# JRE version: OpenJDK Runtime Environment (8.0_91-b14) (build 1.8.0_91-8u91-b14-3ubuntu1~15.10.1-b14)
+# Java VM: OpenJDK 64-Bit Server VM (25.91-b14 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# v  ~BufferBlob::jni_fast_GetLongField
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f1dec276800):  JavaThread "AWT-XAWT" daemon [_thread_in_native, id=4626, stack(0x00007f1dcc7ff000,0x00007f1dcc900000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000000
+
+Registers:
+RAX=0x00007f1df554dec0, RBX=0x00007f1dec2769e0, RCX=0x0000000000000000, RDX=0x0000000000000042
+RSP=0x00007f1dcc8fe838, RBP=0x00007f1dcc8fe860, RSI=0x0000000000000000, RDI=0x00007f1dec2769e0
+R8 =0x00000000ee565308, R9 =0x0000000000000000, R10=0x0000000000000014, R11=0x00007f1ddd2874d8
+R12=0x00007f1d7c00fe10, R13=0x0000000000000000, R14=0x00007f1dce941b00, R15=0x00007f1dec276800
+RIP=0x00007f1ddd0693fa, EFLAGS=0x0000000000010246, CSGSFS=0xc043000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f1dcc8fe838)
+0x00007f1dcc8fe838:   00007f1dce71ef64 00007f1ddcc63118
+0x00007f1dcc8fe848:   00007f1d7c00fe10 00007f1dcc8fe910
+0x00007f1dcc8fe858:   00007f1dcc8fe8e0 0000000000000000
+0x00007f1dcc8fe868:   00007f1dce2013c0 00007f1ddcc63118
+0x00007f1dcc8fe878:   00007f1dcc8fe8a0 0000000000000000
+0x00007f1dcc8fe888:   00007f1dce1f8f93 00007f1dcc8fe910
+0x00007f1dcc8fe898:   00007f1dce716cdf 00007f1dcc8fe8f0
+0x00007f1dcc8fe8a8:   00007f1ddd287576 0000000000000000
+0x00007f1dcc8fe8b8:   00007f1ddd20fd76 00007f1dcc8fe910
+0x00007f1dcc8fe8c8:   00007f1ddd15c1ac 00007f1dcc8fe970
+0x00007f1dcc8fe8d8:   00000000ee74bf00 00000000ee74ccc0
+0x00007f1dcc8fe8e8:   0000000000000001 00007f1dcc8fe970
+0x00007f1dcc8fe8f8:   00007f1ddd0077d0 00007f1dcc8fe970
+0x00007f1dcc8fe908:   00007f1ddd0077d0 0000000000000000
+0x00007f1dcc8fe918:   00007f1ddd007b10 00007f1da0000e30
+0x00007f1dcc8fe928:   00000000ee7cdad0 00007f1dcc8fe930
+0x00007f1dcc8fe938:   00007f1ddcc43314 00007f1dcc8fe9b8
+0x00007f1dcc8fe948:   00007f1ddcc4c238 0000000000000000
+0x00007f1dcc8fe958:   00007f1ddcc43450 00007f1dcc8fe910
+0x00007f1dcc8fe968:   00007f1dcc8fe9b0 00007f1dcc8fea00
+0x00007f1dcc8fe978:   00007f1ddd007ffd 0000000000000000
+0x00007f1dcc8fe988:   00000000eebf38f0 0000000000000000
+0x00007f1dcc8fe998:   0000000000000000 0000000000000000
+0x00007f1dcc8fe9a8:   00000000ee7cdad0 0000000000000000
+0x00007f1dcc8fe9b8:   00000000ee78c158 00007f1dcc8fe9c0
+0x00007f1dcc8fe9c8:   00007f1ddcc43155 00007f1dcc8fea10
